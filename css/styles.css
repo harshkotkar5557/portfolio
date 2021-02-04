@@ -1,0 +1,38 @@
+  body {
+    background-color: #eeeeee
+  }
+
+  hr {
+    border-top-color: white;
+    border-width: 2px;
+    border-style: dotted none none;
+    width: 20%;
+  }
+
+  h1,
+  h2,
+  h3 {
+    color: #0278ae;
+    text-align: center;
+  }
+
+  .Square {
+    border-radius: 50%;
+    border-style: inset;
+    border-width: thick;
+  }
+
+  .Myimage:hover {
+    background-color: Grey;
+  }
+
+  .table {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .parap{
+    text-align: center;
+  }
+  .unorder{
+    text-align: center;
+  }
