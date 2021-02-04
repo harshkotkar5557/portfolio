@@ -13,35 +13,56 @@
   <h3><strong> &nbsp; &nbsp; &nbsp;Fill It !</strong></h3>
 
   <form action="Mailto:harshkotkar562@gmail.com" method="post" enctype="text/plain">
-    <label>Your Name :- </label>
-    <input type="text" name="Name" value="" autofocus> &nbsp;
-    <label>Your Mail Id:- </label>
-    <input type="text" name="Email Id" value="" autocomplete="on"> &nbsp;
-    <label>Your Age :-</label>
-    <input type="number" placeholder="Age" min="10" max="30" required name="Age">
-    &nbsp; Occupation :-
-    <select name="Occupation" id="">
-      <optgroup label="occupation">
-        <option value="" selected>Student</option>
-        <option value="">Graduate</option>
-        <option value="">Business</option>
-      </optgroup>
-      <optgroup label="Income">
-        <option value=""> Upto 1 Lakh</option>
-        <option value=""> Upto 5 Lakh</option>
-        <option value=""> Upto 10 Lakh</option>
-      </optgroup>
-    </select>
-
+    <fieldset>
+      <legend>Basic Information</legend>
+      <label for="1stbox">Your Name :- </label>
+      <input type="text" name="Name" value="" autofocus id="1stbox"> &nbsp;
+      <label>Your Mail Id:- </label>
+      <input type="text" name="Email Id" value="" autocomplete="on"> &nbsp;
+      <label>Your Age :-</label>
+      <input type="number" placeholder="Age" min="10" max="30" required name="Age">
+      &nbsp; Occupation :-
+      <select id="" name="Occupation">
+        <optgroup label="occupation">
+          <option value="S" selected>Student</option>
+          <option value="G">Graduate</option>
+          <option value="B">Business</option>
+        </optgroup>
+        <optgroup label="Income">
+          <option value="1"> Upto 1 Lakh</option>
+          <option value="5"> Upto 5 Lakh</option>
+          <option value="10"> Upto 10 Lakh</option>
+        </optgroup>
+      </select>
+    </fieldset>
     <br>
+    <fieldset>
+      <legend>Other Information</legend>
+      <label for="">Gender :-</label>
+      <input type="radio" value="Gender M" checked> Male
+      <input type="radio" value="Gender F"> Female
+      <input type="radio" value="Gender o"> Other
+      
+      <label for=""> Your interest :-</label>
+      <input type="checkbox"> Web Development
+      <input type="checkbox"> AI & ML
+      <input type="checkbox"> SAP
+      
+      <label for="">Favorite Laptop Brand :-</label>
+      <input type="text" list="datalist">
+      <datalist id="datalist">
+        <option value="Dell">
+        <option value="HP">
+        <option value="Apple">
+        <option value="Acer">
+      </datalist>
+    </fieldset>
     <br>
+    <fieldset>
+      <input type="image" src="submit-label.png" name="all data" width="120" height="50">
+    </fieldset>
 
-    <input type="radio" value="Gender M" checked> Male
-    <input type="radio" value="Gender F"> Female
-    <input type="radio" value="Gender o"> Other
-    <br> <br>
-    &nbsp;&nbsp;
-    <input type="submit" name="">
+    
   </form>
 
 </body>
